@@ -1,0 +1,58 @@
+body {
+font-family: Roboto;
+}
+
+a {
+color: #0469c7;
+}
+
+li {
+padding-top: 0.5em;
+padding-bottom:0.5em;
+}
+
+
+
+
+
+#errLink { color: #0469c7; }
+
+.errorDiv {
+background-color: #f9e9e8;
+color: #333333;
+outline-style:none;
+}
+
+.errText {
+color: #ca261a;
+}
+
+
+
+
+#errHeading {
+font-size: 1em;
+padding-bottom: 0.5em;
+padding-top: 1.5em;
+}
+
+.inlineMsg {
+padding-top: 0.25em;
+}
+
+#formErrors,
+#formErrors2 {
+border-left: 0.25em solid #ca261a;
+}
+
+#confirm {
+border: 1px solid #666666;
+}
+
+#confirm:focus 
+{
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0467c6;
+}
+
+
+}

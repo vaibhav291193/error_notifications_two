@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notifications Styles</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="formStyle_try.css" rel="stylesheet">
+<link href="input_fields.css" rel="stylesheet">
+<link href="dropdowns.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+<script src="formValidation.js"></script> 
+</head>
+  <body>
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-9">
+    <h1 id="mainHeading1">Form Style 1</h1>
+<br role="none"/>
+<br role="none"/>
+
+
+<form name="petForm1" aria-labelledby="mainHeading1" action="thankyou.html" onSubmit="return formValidationOne();" novalidate>
+<div class="col-md-6 row" id="errDivMain"  >
+
+<div id="formErrors" tabindex="-1" class="row errorDiv" style="display:none; margin:0;">
+<div>
+<div style="padding-top:1.5em; padding-left:0.5em;">
+<span><img src="redalert.svg" alt="" id="alertImg" />
+</span>
+<span id="errHeading" style="padding-left:1.5em; text-overflow: ellipsis;  " ></span>
+</div>
+<ul id="formErrList" aria-labelledby="errHeading" style="list-style:none; margin:0; padding:0; padding-left: 4em ">
+</ul>
+</div>
+</div>
+</div>  
+
+<div class="form-group">
+<div>
+<label for= "petName1" style="padding-top: 24px;" >Pet's Name</label>    
+</div>
+<div class="col-md-3 row">
+<input type="name" class="form-control" id= "petName1" aria-describedby="petNameHintText1 petNameError1" required>
+</div>
+<div class="inlineMsg" >
+<span>
+    <img src="info.svg" alt=""/><span id= "petNameHintText1" " style="color:#0469c7;"> The pet’s name must be longer than 5 characters.</span>
+</span>
+</div>
+<div class="inlineMsg" >
+<span id="petNameError1" class="petNameError" style="display:none;"><img src="redalert.svg" alt=""><span class="errText" id="petNameErrText1" ></span></span>  
+</div>
+</div>
+<br role="none"/>
+
+  <div class="form-group">
+<div>    
+<label for="petType1">Pet Type</label>
+</div>
+<div class="col-md-3 row">
+    
+<select id="petType1" required aria-describedby="petTypeError1" class="ds-cpc-control-select__tpl" >
+      <option value="0">--Select--</option>
+      <option value="1">Mouse</option>
+      <option value="2">Cat</option>
+      <option value="3">Dog</option>
+      <option value="4">Goat</option>
+    </select>
+</div>
+<div class="inlineMsg" >
+<span id="petTypeError1" class="petTypeError" style="display:none;" ><img src="redalert.svg" alt=""><span class="errText" id="petTypeErrText1" ></span></span>  
+  </div>
+  </div>
+<br role="none"/>
+  <div class="form-check">
+<label class="form-check-label" >
+    <input type="checkbox" class="form-check-input" id="confirm1" aria-describedby="confirmError1" required>
+I confirm that the details submitted are correct to the best of my knowledge.</label>
+</div>
+<div class="inlineMsg" >
+<span id="confirmError1" class="confirmError"  style="display:none;"><img src="redalert.svg" alt=""><span class="errText" id="confirmErrText1" ></span>  
+</div>
+<br role="none"/>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>    
+
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-9">
+    <h1 id="mainHeading2">Form Style 2</h1>
+<br role="none"/>
+<br role="none"/>
+
+<form name="petForm2" aria-labelledby="mainHeading2" action="thankyou.html" onSubmit="return formValidationTwo();" novalidate>
+
+<div class="form-group">
+<div>
+<label for= "petName2" style="padding-top:24px;" >Pet's Name</label>    
+</div>
+<div class="col-md-3 row">
+<input type="name" class="form-control" id= "petName2" aria-describedby="petNameHintText2 petNameError2"  required >
+</div>
+<div class="inlineMsg" >
+<span>
+    <img src="info.svg" alt=""/><span id= "petNameHintText2" " style="color:#0469c7;"> The pet’s name must be longer than 5 characters.</span>
+</span>
+</div>
+<div class="inlineMsg" >
+<span id="petNameError2" class="petNameError" style="display:none;"><img src="redalert.svg" alt=""><span class="errText" id="petNameErrText2" ></span></span>  
+</div>
+</div>
+<br role="none"/>
+
+  <div class="form-group">
+<div>    
+<label for="petType2">Pet Type</label>
+</div>
+<div class="col-md-3 row">
+    
+<select class="ds-cpc-control-select__tpl" id="petType2" required aria-describedby="petTypeError2">
+      <option value="0">--Select--</option>
+      <option value="1">Mouse</option>
+      <option value="2">Cat</option>
+      <option value="3">Dog</option>
+      <option value="4">Goat</option>
+    </select>
+</div>
+<div class="inlineMsg" >
+<span id="petTypeError2" class="petTypeError" style="display:none;" ><img src="redalert.svg" alt=""><span class="errText" id="petTypeErrText2"></span></span>  
+  </div>
+  </div>
+<br role="none"/>
+  <div class="form-check">
+<label class="form-check-label" >
+    <input type="checkbox" class="form-check-input" id="confirm2" aria-describedby="confirmError2" required>
+I confirm that the details submitted are correct to the best of my knowledge.</label>
+</div>
+<div class="inlineMsg" >
+<span id="confirmError2" class="confirmError" style="display:none;"><img src="redalert.svg" alt=""><span class="errText" id="confirmErrText2" ></span></span>  
+</div>
+<br role="none"/>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+<br role="none"/>
+<br role="none"/>
+
+<div id="formErrors2" class="errorDiv" style="display:none;">
+<div style="padding-top:1.5em; padding-left:1.5em; padding-bottom:1.5em;">
+<span><img src="redalert.svg" alt="" id="alertImg2" />
+</span>
+<span style="padding-left:1.5em; text-overflow: ellipsis; display:inline-block; "><span id="errCountText"></span><a id="errLink" href="" aria-describedby="errCountText"></a></span>
+</div>
+</div>
+</form>
+</div>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

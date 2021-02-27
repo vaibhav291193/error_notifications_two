@@ -1,0 +1,140 @@
+
+#petName1,
+#petName2 {
+  border-radius: 2px;
+  border: solid 1px #666666;
+  background: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #333333;
+  padding: 10px 16px;
+  height: 44px;
+  outline: none;
+  max-width: 368px;
+  width: 100%;
+  margin-bottom: 24px; /* Change as per need */
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 40em) {
+  #petName1,
+  #petName2 {
+    max-width: 100%;
+  }
+
+/* Focus State */
+
+#petName1:focus,
+#petName2:focus
+{
+  outline: 0;
+  border: solid 1px #0467c6;
+  border-radius: 2px;
+  
+  -webkit-box-shadow: inset 1px 1px 0px 0px#0467c6, inset -1px -1px 0px 0px#0467c6;
+  -moz-box-shadow: inset 1px 1px 0px 0px#0467c6, inset -1px -1px 0px 0px#0467c6;
+  box-shadow: inset 1px 1px 0px 0px#0467c6, inset -1px -1px 0px 0px#0467c6;
+}
+
+#petName1.error,
+#petName2.error {
+  border: solid 1px #ca261a !important;
+  margin-bottom: 4px !important;
+}
+
+#petName1:focus.error,
+#petName2:focus.error {
+  border: solid 1px #ca261a !important;
+  outline: none;
+  -webkit-box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+  -moz-box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+  box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+
+
+  margin-bottom: 4px !important;
+}
+
+
+
+/* End Focus State */
+
+
+.ds-error {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #ca261a;
+  text-align: left;
+  display: block;
+
+  background-image: url('../img/icons/red-alert.svg');
+  background-repeat: no-repeat;
+  padding-left: 32px;
+}
+
+.hintText{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.5px;
+  color: #333333;
+
+  padding: 0;
+  margin: 0 0 4px 0;
+}
+
+
+textarea {
+  border-radius: 2px;
+  border: solid 1px #666666;
+  background-color: #ffffff;
+  padding: 10px 16px;
+  width: 368px;
+  height: 205px;
+  resize: none;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+@media only screen and (max-width: 40em) {
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+textarea + .maxCharacter{
+  margin-top: 4px;
+}
+
+.maxCharacter{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #666666;
+
+  padding: 0;
+  margin: 0 0 4px 0;
+}
